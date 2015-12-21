@@ -274,12 +274,8 @@ body {
 }
 
 header {
-	background: url(../img/bg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding: 0 0 15px 0;
+	background: #47013D url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
 
 	color: #fff;
 	text-shadow: 5px 5px 10px #585858;

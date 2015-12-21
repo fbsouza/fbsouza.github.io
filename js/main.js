@@ -3,16 +3,19 @@
 
   $('.name').addClass('animated flip-bottom');
 
-  // $('.photo').on('mouseover mouseout', function (e) {
-  //   $('.name').toggleClass('animated flip-top', e.type === 'mouseover');
-  // });
-
-  // @todo refazer isso
-  $('header').height($(window).height());
+  $('.btn-portfolio,  .btn-contact').on('mouseover mouseout', function (e) {
+    $('.photo').toggleClass('animated jump-bounce', e.type === 'mouseover');
+  });
 
   $('.btn-portfolio').on('click', function(event) {
     $('html, body').animate({
       scrollTop: ($('.portfolio').first().offset().top)
     }, 1000);
   });
+
+  $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+
 })();

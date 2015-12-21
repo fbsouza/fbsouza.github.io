@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,400italic' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
 
@@ -25,10 +26,8 @@
 				<div class="profile">
 					<div class="row">
 						<div class="photo text-center">
-							<img src="img/photo.png" class="img-circle animated flip-top" width="200" height="200" alt="Fábio Souza">
+							<img src="img/photo.png" class="img-circle animated enter-down-bounce" width="200" height="200" alt="Fábio Souza">
 						</div>
-					</div>
-					<div class="row">
 						<div class="text-center">
 							<h1 class="name">Fábio Souza</h1>
 						</div>
@@ -40,13 +39,13 @@
 						<nav class="text-center">
 							<ul class="main-nav">
 								<li>
-									<a class="btn-portfolio" href="#portfolio">Portfólio</a>
+									<a class="btn-portfolio" href="javascript:void(0)"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Portfólio</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="http://www.github.com/fbsouza" target="_blank">GitHub</a>
-								</li>
+								</li> -->
 								<li>
-									<a href="mailto:fsouza.me@gmail.com" target="_blank">Contact</a>
+									<a class="btn-contact" href="mailto:fsouza.me@gmail.com" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -59,25 +58,81 @@
 			<div class="container portfolio">
 				<div class="row">
 					<div class="col-sx-12 text-center">
-						<h2>Portfólio</h2>
-						<hr>
+						<h2><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Portfólio</h2>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-					<div class="col-sm-4 item-portfolio"><img src="https://mxcursos.com/image/cache/data/NewThumbs/122_criando_site_completo_v3-cr-738x462.png" class="img-responsive"></div>
-				</div>
+				<hr>
+				<ul class="nav nav-tabs nav-justified" role="tablist">
+			    <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Telefónica - Trade On-line</a></li>
+			    <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Danone - Organograma</a></li>
+			    <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Camargo Corrêa - Banco de Mídias</a></li>
+			    <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Worley Parson - 4.4.3</a></li>
+			    <li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">Norte Energia - 7.4</a></li>
+			  </ul>
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/trade1.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/trade1.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/trade2.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/trade2.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/trade3.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/trade3.png" class="img-responsive thumbnail"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/trade4.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/trade4.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/trade5.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/trade5.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/trade6.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/trade6.png" class="img-responsive thumbnail"></a></div>
+						</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="tab2">
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/danone1.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/danone1.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/danone2.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/danone2.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/danone3.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/danone3.png" class="img-responsive thumbnail"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/danone4.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/danone4.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/danone5.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/danone5.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/danone6.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/danone6.png" class="img-responsive thumbnail"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/danone7.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/danone7.png" class="img-responsive thumbnail"></a></div>
+						</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="tab3">
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/banco1.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/banco1.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/banco2.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/banco2.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/banco3.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/banco3.png" class="img-responsive thumbnail"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/banco4.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/banco4.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/banco5.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/banco5.png" class="img-responsive thumbnail"></a></div>
+						</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="tab4">
+			    	<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/4431.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/4431.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/4432.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/4432.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/4433.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/4433.png" class="img-responsive thumbnail"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/4434.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/4434.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/4435.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/4435.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/4436.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/4436.png" class="img-responsive thumbnail"></a></div>
+						</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="tab5">
+			    	<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/741.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/741.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/742.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/742.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/743.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/743.png" class="img-responsive thumbnail"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/744.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/744.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/745.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/745.png" class="img-responsive thumbnail"></a></div>
+							<div class="col-sm-4 item-portfolio"><a href="img/portfolio/746.png" data-toggle="lightbox" data-gallery="multiimages"><img src="img/portfolio/746.png" class="img-responsive thumbnail"></a></div>
+						</div>
+			    </div>
+			  </div>
 			</div>
 		</section>
 
@@ -93,6 +148,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
